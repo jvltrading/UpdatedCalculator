@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-origin: padding-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+  font-size: 17px;
+  background-color: #636363;
+}
+
+.calculator{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calcContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2d2c;
+  width: 600px;
+  height: auto;
+  border-radius: 25px 25px 30px 30px;
+}
+
+.display{
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+}   
+
+.operation{
+  width: 600px;
+  height: 90px;
+  color: #878787;
+  font-size: 1.8em;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.operation .value{
+  position: absolute;
+  bottom: 5px;
+  right : 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.result{
+  width: 600px;
+  height: 130px;
+  color: #FFF;
+  font-size: 2.6em;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+
+.result .value{
+  position: absolute;
+  top: 40%;
+  right : 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 0 0 25px 25px;
+  border: 1px solid #1d1d1d;
+  height: 340px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row button{
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 30%;
+  background-color: transparent;
+  margin : 8px;
+  cursor: pointer;
+}
+
+.row button:hover{
+  font-weight: bold;
+}
+
+.row #calculate{
+  color: #FFF;
+  background-color: #0e9777;
+  width : 75px;
+  border-radius: 20px;
+}
+.row #delete{
+  color: #FFF;
+  background-color: #e05046;
+}
+
+#division, #multiplication, #subtraction, #addition {
+  color: #0c0566;
+}
+
+.input button span{
+  font-size: 0.6em;
+}
+
+.active-angle{
+  background-color: #1d1d1d !important;
+  color: #FFF !important;
+  border-radius: 20px !important;
+}
