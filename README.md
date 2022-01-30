@@ -14,3 +14,10 @@ For those wanting to update changes as you make them:
 - npm install nodemon.
 
 To run the program use : nodemon .\index.js
+
+
+Latest Update -----------------------------
+
+- Power function fixed.
+- Factorial function fixed.
+- Square Root function fixed.
