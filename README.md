@@ -18,6 +18,7 @@ To run the program use : nodemon .\index.js
 
 Latest Update -----------------------------
 
+- Index.js updated to use res.redirect for the html file.
 - Power function fixed.
 - Factorial function fixed.
 - Square Root function fixed.
