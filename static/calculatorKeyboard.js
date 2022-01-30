@@ -207,7 +207,7 @@ let calculatorKeys = [
   {
     name: "factorial",
     symbol: "x!",
-    formula: "factorial(Math.factorial,",
+    formula: "factorial(",
     type: "mathFunction"
   },
 

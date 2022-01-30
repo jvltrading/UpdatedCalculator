@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/static'));
 
 app.get("/", (req, res) => {
-  res.sendFile('C:/Users\\bbdnet2533\\Desktop\\Programming Training\\myCalculator\\public\\calculator.html');
+  res.redirect('/calculator.html');
 })
 
 app.listen(port);

@@ -85,13 +85,26 @@ function calculator(button) {
       formula = button.formula;
       data.operation.push(symbol);
       data.formula.push(formula);
+      let index = search(data.formula, 'factorial(');
+      let numberCopy = data.operation[index - 1];
+      data.formula.pop();
+      data.formula.pop();
+      data.formula.push(formula);
+      data.formula.push(numberCopy + ")");
     }else if(button.name == "power") {
       symbol = "^(";
       formula = button.formula;
       data.operation.push(symbol);
       data.formula.push(formula);
-    } else if(button.name == "squareRoot") {
-      data.operation.push(button.symbol + "(");
+      let index = search(data.formula, 'toThePower(Math.pow,');
+      let numberCopy = data.operation[index - 1];
+      data.formula.pop();
+      data.formula.pop();
+      data.formula.push(formula);
+      data.formula.push(numberCopy + ",");
+    } else if(button.name == "squareRoute") {
+      symbol = '√';
+      data.operation.push(symbol + "(");
       data.formula.push(button.formula);
     }else {
       symbol = button.symbol + "(";
@@ -155,6 +168,7 @@ function inverseTrig(equation, value) {
 
   if(!RADIAN) {
     angle = angle * 180/Math.PI;
+    Math.factorial(1);
   }
   return angle;
 }
