@@ -22,3 +22,7 @@ Latest Update -----------------------------
 - Power function fixed.
 - Factorial function fixed.
 - Square Root function fixed.
+
+
+Polish Notation ----------------------------
+- Try to use polish notation to handle the brackets.
